@@ -4,7 +4,7 @@ const router = require("express").Router();
 // Load product repository module
 const repo = require("../repositories/product-file");
 
-router.get("/products/", (req, res, next) => {
+router.get("/", (req, res, next) => {
   repo.get(
     function (data) {
       // SUCCESS: Data received
@@ -16,15 +16,14 @@ router.get("/products/", (req, res, next) => {
       });
     },
     function (err) {
-      // ERROR: pass error along to
-      // the 'next' middleware
+      // ERROR: pass error along to the 'next' middleware
       next(err);
     }
   );
 });
 
 // GET /search Route
-router.get("/products/search", (req, res, next) => {
+router.get("/search", (req, res, next) => {
   // Create search object with
   // parameters from query line
   let search = {
@@ -81,7 +80,7 @@ router.get("/products/search", (req, res, next) => {
 });
 
 // GET /id Route
-router.get("/products/:id", (req, res, next) => {
+router.get("/:id", (req, res, next) => {
   repo.getById(
     req.params.id,
     function (data) {
