@@ -1,0 +1,6 @@
+{
+    "host": "http://abc.com.au",
+    "port": 80,
+    "prefix": "/api"
+  }
+  

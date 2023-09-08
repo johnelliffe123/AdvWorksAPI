@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 // Path/file name to the product data
-const DATA_FILE = "./db/product.json";
+const DATA_FILE = "./db/product-bad.json";
 
 // Product repository object
 let repo = (exports = module.exports = {});
