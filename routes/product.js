@@ -2,7 +2,10 @@
 const router = require("express").Router();
 
 // Load product repository module
-const repo = require("../repositories/product-file");
+// const repo = require("../repositories/product-file");
+// Load product repository module
+let repo = require('../repositories/product-sqlServer');
+
 
 router.get("/", (req, res, next) => {
   repo.get(
