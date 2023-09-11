@@ -1,6 +1,7 @@
 {
     "host": "http://abc.com.au",
     "port": 80,
-    "prefix": "/api"
+    "prefix": "/api",
+    "connectString": "Server=Localhost,1433;Database=AdvWorksProducts;User Id=AWPUser;Password=AWPUser123;Encrypt=false"
   }
   
